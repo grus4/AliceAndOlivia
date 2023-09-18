@@ -1,0 +1,18 @@
+{
+  "name": "aliceandolivia",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "codeceptjs run --steps --plugins retryFailedStep --grep"
+
+  },
+  "keywords": [],
+  "author": "Ruslan Gaiduchok",
+  "license": "ISC",
+  "dependencies": {
+    "codeceptjs": "^3.5.4",
+    "mochawesome": "^7.1.3",
+    "puppeteer": "^21.2.1"
+  }
+}
