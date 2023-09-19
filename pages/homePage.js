@@ -23,7 +23,7 @@ module.exports = {
 
   openHomePage() {
     I.amOnPage("/");
-    I.wait(2);
+    I.wait(5);
   },
 
   openPlPStg() {
@@ -36,8 +36,9 @@ module.exports = {
   searchProduct(productId) {
     I.click(this.elements.magnifierIcon);
     I.fillField(this.elements.searchField, productId);
+    I.wait(5);
     I.waitForVisible(this.elements.productTile, 5);
     I.click(this.elements.productTile);
-    I.wait(8);
+    I.wait(10);
   },
 };

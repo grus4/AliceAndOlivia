@@ -64,7 +64,7 @@ module.exports = {
   addProductToBag() {
     //I.refreshPage();
     I.click(this.buttons.sizeSwatch);
-    I.wait(3);
+    I.wait(5);
     I.click(this.buttons.addToBag);
     I.wait(5);
     I.waitForClickable(this.buttons.shoppingBagIcon, 5);

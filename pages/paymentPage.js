@@ -82,6 +82,10 @@ module.exports = {
   },
 
   fillOutCreditCardform(cardNumber, expDate, cvv) {
+        // await within(this.fields.iframe1, () => {
+        //   I.switchTo(this.fields.iframe1);
+        //   I.fillField(this.fields.cardNumber, cardNumber);
+        // });
     I.switchTo(this.fields.iframe1);
     I.fillField(this.fields.cardNumber, cardNumber);
     I.switchTo();

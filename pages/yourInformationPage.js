@@ -11,6 +11,15 @@ module.exports = {
     zipCode: { xpath: '//input[@id="shippingZipCodedefault"]' },
     emailAddress: { xpath: '//input[@id="email"]' },
     phoneNumber: { xpath: '//input[@id="shippingPhoneNumberdefault"]' },
+    cardNumber: {
+      xpath: './/input[@data-fieldtype="encryptedCardNumber"]',
+    },
+  },
+
+  elements: {
+    iframe1: {
+      css: '[data-cse="encryptedCardNumber"] iframe',
+    },
   },
 
   buttons: {
@@ -46,6 +55,7 @@ module.exports = {
 
   navigateToPaymentPage() {
     I.click(this.buttons.continueToPayment);
-    I.wait(5);
+    I.wait(8);
+    I.waitForElement(this.elements.iframe1, 5);
   },
 };

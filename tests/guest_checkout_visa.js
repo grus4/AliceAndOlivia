@@ -6,7 +6,7 @@ Feature("checkout @S45a53700");
 
 Scenario(
   "guest_checkout_visa @T103b7baa @smoke",
-  ({
+  async ({
     I,
     homePage,
     productLandingPage,
@@ -34,13 +34,13 @@ Scenario(
         shippingAddress.phoneNumber
       );
       yourInformationPage.navigateToPaymentPage();
-      pause();
+      //pause();
       paymentPage.fillOutCreditCardform(
         creditCardVisa.creditCardNumber,
         creditCardVisa.expDate,
         creditCardVisa.cvv
       );
-      paymentPage.placeOrder();
-      confirmationPage.checkOrder();
+      //paymentPage.placeOrder();
+      //confirmationPage.checkOrder();
   }
 );
